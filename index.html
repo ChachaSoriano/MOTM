@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+.auto-style1 {
+	text-align: center;
+	font-family:Comic Sans MS;
+	font-size: 22px;
+}
+
+.auto-style2 {
+	font-size: xx-large;
+}
+
+</style>
+<script type="text/javascript">
+
+window.addEventListener("devicemotion", function(event) {
+		var ax = event.accelerationIncludingGravity.x;
+		var ay = event.accelerationIncludingGravity.y;
+		if(ax<-5){
+			window.location = "camera.html";
+			
+		}
+		if(ax>5){
+			window.location = "video.html";
+			
+		}
+		if(ay>5){
+			window.location = "mic.html";
+		}
+		}, true);
+
+</script>
+<script type="text/javascript">
+function about(){
+	window.location = "about.html";
+}
+</script>
+</head>
+<body>
+<div style="width:625px; height:465px; background:url(images/bground.png);">
+<div>
+<img src="images/motm.png" width="625px" height="190px">
+</div>
+<div class="auto-style1">
+<span class="auto-style2">INSTRUCTIONS:</span><br/>
+<span><strong>MOVE your Device to the LEFT to open CAMERA<br />
+MOVE your Device to the RIGHT to open VIDEO<br />
+MOVE your Device UP to open VOICE RECORDER</strong></span>
+</div>
+<br />
+<table style="margin-left:180px;">
+<tr>
+<td><button onClick="about()" id="button" style=" width: 265px; height: 100px; font-size: xx-large; font-family: 'Gill Sans Ultra Bold';">About</button></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

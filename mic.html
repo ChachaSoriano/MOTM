@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+ * Copyright 2011 Research In Motion Limited.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,user-scalable=no,initial-scale=1.0">
+
+	<script src="js/microphone.js" type="text/javascript"></script>
+<script type="text/javascript">
+function exit(){
+	window.location = "index.html";
+}
+</script>
+</head>
+<body>
+<div style="width:625px; height:465px; background:url(images/bground.png);">
+<div id="micDetails">
+<div>
+	<img src="images/motm.png" width="625px" height="214">
+	</div>
+		<!--<div id="recordingProgress" class="updateMsg">Recording ...</div>
+		<div id="recordingPaused" class="updateMsg">*** PAUSED ***</div>-->
+	<table style="margin-left:2px;">
+			<tr>
+			<td><button id="btnStart" onclick="record()" style="margin-left:38px; margin-top:0px; width: 265px; height: 100px; font-size: xx-large; font-family: 'Gill Sans Ultra Bold';">Start Recording</button></td>
+			<td><button id="btnPause" disabled="disabled" onclick="pause()" style="margin-left:10px; margin-top:0px; width: 265px; height: 100px; font-size: xx-large; font-family: 'Gill Sans Ultra Bold';">Pause</button></td>
+			</tr>
+			<tr>
+			<td><button id="btnStop"  disabled="disabled" onclick="stop()" style="margin-left:38px; margin-top:10px; width: 265px; height: 100px; font-size: xx-large; font-family: 'Gill Sans Ultra Bold';">Stop</button></td>
+			<td><button onClick="exit()" style="margin-left:10px; margin-top:10px; width: 265px; height: 100px; font-size: xx-large; font-family: 'Gill Sans Ultra Bold';">Exit</button></td>
+		</tr>
+		<p id="recordedAudio">
+		</p>
+	</div>
+</div>
+</body>
+</html>

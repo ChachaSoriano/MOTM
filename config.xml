@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget xmlns="http://www.w3.org/ns/widget" xmlns:rim="http://www.blackberry.com/ns/widget" version="1.0.0">
+
+
+<name>Media on the Move</name>
+<author>Joel Aposaga</author>
+<icon src="Media9900.png" />
+<content src="index.html" />
+<feature id="blackberry.app" />
+<rim:orientation mode="auto" />
+<rim:category name="Media"/>
+
+
+<rim:permissions>
+		<rim:permit>record_audio</rim:permit>
+		<rim:permit>use_camera</rim:permit>
+	</rim:permissions>
+
+	
+	<feature id="blackberry.media.camera" required="true" version="1.0.0.0"/>
+	<feature id="blackberry.media.microphone" required="true" version="1.0.0.0"/>
+	<feature id="blackberry.invoke" required="true" version="1.0.0.0"/>
+	<feature id="blackberry.invoke.CameraArguments" required="true" version="1.0.0.0"/>
+	<feature id="blackberry.audio" required="true" version="1.0.0.0"/>
+	<feature id="blackberry.audio.Player" required="true" version="1.0.0.0"/>
+
+</widget>
